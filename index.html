@@ -3,39 +3,113 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>bikeERG Privacy Policy</title>
+<title>Bikeflow Privacy Policy</title>
 <style>
-body { font-family: -apple-system, system-ui, sans-serif; max-width: 700px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
-h1 { font-size: 24px; } h2 { font-size: 18px; margin-top: 30px; } p { margin: 10px 0; }
+body { font-family: -apple-system, system-ui, sans-serif; max-width: 720px; margin: 40px auto; padding: 0 20px; color: #333; line-height: 1.6; }
+h1 { font-size: 26px; }
+h2 { font-size: 18px; margin-top: 30px; }
+h3 { font-size: 16px; margin-top: 20px; }
+p { margin: 10px 0; }
+ul { margin: 10px 0; padding-left: 24px; }
+li { margin: 6px 0; }
+code { background: #f4f4f4; padding: 2px 6px; border-radius: 3px; font-size: 0.9em; }
 </style>
 </head>
 <body>
-<h1>bikeERG Privacy Policy</h1>
-<p><strong>Last updated:</strong> March 2026</p>
+<h1>Bikeflow &ndash; Cycling Trainer Privacy Policy</h1>
+<p><strong>Last updated:</strong> April 15, 2026</p>
+<p><strong>App name:</strong> Bikeflow &ndash; Cycling Trainer<br>
+<strong>Package:</strong> com.kickr.controller<br>
+<strong>Developer:</strong> Henriko</p>
 
 <h2>Overview</h2>
-<p>bikeERG is a cycling trainer control app. Your privacy is important to us. This policy explains what data bikeERG collects and how it is used.</p>
+<p>Bikeflow (formerly bikeERG) is a cycling trainer control app for Wahoo KICKR and other FTMS-compatible smart trainers. Your privacy is important to us. This policy explains what data Bikeflow collects, how it is used, how long it is kept, and how you can delete it.</p>
 
 <h2>Data We Collect</h2>
-<p><strong>All data stays on your device.</strong> bikeERG does not collect, transmit, or store any personal data on external servers. Specifically:</p>
-<p><strong>Training data</strong> (power, cadence, heart rate, session history, FTP, weight) is stored locally on your device using Android SharedPreferences and internal file storage. This data never leaves your device unless you explicitly choose to export it.</p>
-<p><strong>Bluetooth data</strong> is used solely to communicate with your cycling trainer and sensors (heart rate, cadence). No Bluetooth data is transmitted to any server.</p>
-<p><strong>Location data</strong> is not collected. The app requests location permission solely because Android requires it for Bluetooth Low Energy scanning. No GPS or location data is recorded or stored.</p>
+<p><strong>All data stays on your device.</strong> Bikeflow does not collect, transmit, or store any personal data on external servers operated by us. Specifically:</p>
+<ul>
+<li><strong>Training data</strong> (power, cadence, speed, heart rate, session history, workout progress, FTP, body weight) is stored locally on your device using Android SharedPreferences and internal file storage. This data never leaves your device unless you explicitly choose to export it or upload it to Strava.</li>
+<li><strong>Custom workouts</strong> you create within the app are stored locally on your device.</li>
+<li><strong>Bluetooth device identifiers</strong> for the smart trainer, heart rate monitor, and cadence sensor are used solely to communicate with the devices during an active session and are not persisted beyond the session.</li>
+<li><strong>Location data is not collected.</strong> The app requests location permission solely because Android requires it for Bluetooth Low Energy (BLE) scanning. No GPS or location data is recorded or stored.</li>
+<li><strong>Strava tokens</strong> (access token, refresh token, expiry timestamp, athlete name) are stored locally on your device only if you choose to connect your Strava account.</li>
+</ul>
+
+<h2>How We Use Data</h2>
+<ul>
+<li>To display your real-time training metrics during a session.</li>
+<li>To calculate workout statistics, power curves, and training history.</li>
+<li>To control your smart trainer's target power in ERG mode.</li>
+<li>To upload completed workouts to Strava, but only when you explicitly tap the upload button.</li>
+</ul>
+
+<h2>Data Retention</h2>
+<p>We do not operate any servers that retain your data. All data is stored exclusively on your device for the following periods:</p>
+<ul>
+<li><strong>Session history:</strong> Up to 20 most recent sessions are kept. When a 21st session is saved, the oldest is automatically deleted.</li>
+<li><strong>Custom workouts:</strong> Up to 30 custom workouts are kept. Older entries beyond this limit are automatically deleted.</li>
+<li><strong>TCX workout files:</strong> Stored in the app's internal storage until you delete them or uninstall the app.</li>
+<li><strong>User settings</strong> (FTP, weight, language, premium status): Stored until you change them, clear app storage, or uninstall the app.</li>
+<li><strong>Strava tokens:</strong> Stored until you disconnect Strava inside the app or uninstall the app.</li>
+<li><strong>Bluetooth device identifiers:</strong> Not persisted &ndash; discarded as soon as you disconnect from the device or close the app.</li>
+</ul>
+<p>We do not keep any copies of your data after you delete it from your device, because we do not operate any backend servers that receive it.</p>
+
+<h2>Data Deletion</h2>
+<p>You have full control over your data at any time. There are several ways to delete it:</p>
+<h3>Delete data inside the app</h3>
+<ul>
+<li><strong>Delete a single session:</strong> Open <em>History</em>, tap a session, and choose <em>Delete</em>.</li>
+<li><strong>Disconnect Strava:</strong> Open <em>Settings</em>, find Strava, and tap <em>Disconnect</em>. This immediately removes all stored Strava tokens and athlete information from your device.</li>
+<li><strong>Delete a custom workout:</strong> Open <em>Custom workouts</em>, long-press a workout, and choose <em>Delete</em>.</li>
+</ul>
+<h3>Delete all app data via Android Settings</h3>
+<p>You can permanently erase all Bikeflow data from your device at any time:</p>
+<ol>
+<li>Open <strong>Android Settings &rarr; Apps &rarr; Bikeflow &rarr; Storage</strong>.</li>
+<li>Tap <strong>Clear storage</strong> (or <strong>Clear data</strong>).</li>
+<li>All workout history, custom workouts, TCX files, user settings, and Strava tokens will be permanently removed.</li>
+</ol>
+<h3>Uninstall the app</h3>
+<p>Uninstalling Bikeflow removes all locally stored data associated with the app from your device.</p>
+<h3>Request deletion by email</h3>
+<p>If for any reason you would like to request deletion of data or have questions about the deletion process, you can contact us at <strong>henrik19900@gmail.com</strong>. Because we do not operate servers that store your data, there is typically nothing for us to delete on our side &ndash; but we are happy to assist with any questions.</p>
 
 <h2>Third-Party Services</h2>
-<p><strong>Strava:</strong> If you choose to upload training files to Strava, the app will transmit your TCX training file to Strava's servers via their API. This is entirely optional and initiated only by you. Strava's own privacy policy governs how they handle your data.</p>
-<p><strong>Google Play Billing:</strong> Subscription purchases are processed by Google Play. Google's privacy policy governs payment data.</p>
+<p><strong>Strava:</strong> If you choose to connect your Strava account and upload workouts, the app will transmit your TCX training file to Strava's servers via their API. This is entirely optional and is only initiated when you explicitly tap the upload button. Strava's own <a href="https://www.strava.com/legal/privacy">privacy policy</a> governs how they handle your data once uploaded.</p>
+<p><strong>Google Play Billing:</strong> Subscription purchases are processed by Google Play. We do not receive or store your payment details. Google's <a href="https://policies.google.com/privacy">privacy policy</a> governs payment data.</p>
 
-<h2>Data Storage</h2>
-<p>All app data is stored locally on your Android device. Training files (TCX) are saved to your device's internal storage or Downloads folder. You can delete all app data at any time by clearing the app's storage in Android Settings or by uninstalling the app.</p>
+<h2>Data Sharing</h2>
+<p>We do <strong>not</strong> share your data with any third party except in the two cases described above (Strava, only on your explicit action; Google Play Billing, handled entirely by Google).</p>
+
+<h2>Data Security</h2>
+<ul>
+<li>All data is stored in Bikeflow's private storage area on your device, which Android isolates from other apps.</li>
+<li>Network requests to the Strava API are made over HTTPS.</li>
+<li>We do not transmit your workout data to any server operated by us.</li>
+</ul>
+
+<h2>Permissions</h2>
+<p>The app requests the following Android permissions and uses them only for the stated purposes:</p>
+<ul>
+<li><strong>Bluetooth (BLUETOOTH_SCAN, BLUETOOTH_CONNECT):</strong> Discover and connect to your smart trainer and sensors.</li>
+<li><strong>Location (ACCESS_FINE_LOCATION):</strong> Required by Android to allow BLE scanning. We do not collect or use your location.</li>
+<li><strong>Internet:</strong> Strava OAuth authentication and uploading workouts to Strava.</li>
+<li><strong>Foreground service:</strong> Keep your workout session running reliably while the app is in the background.</li>
+<li><strong>Post notifications:</strong> Display an ongoing notification showing your current workout status.</li>
+<li><strong>Vibrate:</strong> Workout interval alerts.</li>
+<li><strong>Ignore battery optimizations:</strong> Optional. Prevents Android from killing active workout sessions.</li>
+</ul>
 
 <h2>Children's Privacy</h2>
-<p>bikeERG is not directed at children under 13. We do not knowingly collect data from children.</p>
+<p>Bikeflow is not directed at children under 13. We do not knowingly collect data from children.</p>
 
 <h2>Changes to This Policy</h2>
-<p>We may update this policy from time to time. Changes will be posted on this page with an updated date.</p>
+<p>We may update this policy from time to time. Changes will be posted on this page with an updated date at the top. Continued use of the app after changes are posted constitutes acceptance of the updated policy.</p>
 
 <h2>Contact</h2>
-<p>If you have questions about this privacy policy, contact us at: <strong>henrik19900@gmail.com</strong></p>
+<p>If you have questions about this privacy policy, contact us at:<br>
+<strong>Email:</strong> henrik19900@gmail.com<br>
+<strong>GitHub:</strong> <a href="https://github.com/henrik19900-cpu/kickr-controller">https://github.com/henrik19900-cpu/kickr-controller</a></p>
 </body>
 </html>
